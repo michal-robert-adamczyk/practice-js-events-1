@@ -1,11 +1,12 @@
 const MouseMove = function (){
     console.log('mousemove');
 };
-
+const MouseLeave = function (){
+    console.log('mouseleave');
+};
 document.addEventListener('DOMContentLoaded', function()
 {    
     const div = document.querySelector('div');
-    
-    // console.log('jest');
     div.addEventListener('mousemove',MouseMove);
+    div.addEventListener('mouseleave',MouseLeave);
 });
